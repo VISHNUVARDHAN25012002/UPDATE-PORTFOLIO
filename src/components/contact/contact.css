@@ -1,75 +1,32 @@
-/* #contactPage{
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1rem;
+#tsparticles {
+  position: fixed; /* Ensures the particles cover the entire viewport */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Particles stay behind the content */
 }
-.contactDesc{
-    padding: 1rem;
-    font-size: medium;
-    font-weight: 300;
-}
-.contactform{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.name,.email,.msg{
-    font-size: medium;
-    width: 100%;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background: rgb(40,40,40);
 
-}
-.submitBtn{
-    background: white;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75em 3.5rem ;
 
-}
-.links{
-    display: flex;
-    flex-wrap: wrap;
-}
-.link{
-    object-fit: cover;
-    height: 5rem;
-    width: 5rem;
-    padding: 1rem;
-}
-    
-@media screen and (max-width:580px) {
-    .links{
-        display: flex;
-        flex-wrap:wrap ;
-    }
-} */
- #contactPage {
+
+#contactPage {
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  background: #202020;
-  position: relative; /* Ensures sections stay above particles but below navbar */
+  background: #181818;
+  position: relative; /* Ensures content sections stay above particles */
   z-index: 2;
 }
 
+
 .contactDesc {
   padding: 1rem;
-  font-size: medium;
+  font-size: 1.1rem; /* Slightly larger text for readability */
   font-weight: 300;
-  color: #b8b8b8;
+  color: #b8b8b8; /* Light grey for description text */
 }
 
 .contactform {
@@ -88,22 +45,27 @@
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.75rem 1rem;
-  color: white;
+  color: #fff; /* White text for form fields */
   border: none;
   border-radius: 0.5rem;
-  background: rgb(40, 40, 40);
+  background: #333; /* Darker background for form fields */
   box-sizing: border-box;
 }
 
 .submitBtn {
-  background: #f9d342;
+  background: #f9d342; /* Bright button color for contrast */
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
   margin-top: 1rem;
-  color: black;
+  color: black; /* Black text on button */
   font-size: 1.2rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #e6b322; /* Slightly darker yellow on hover */
 }
 
 .links {
@@ -125,7 +87,7 @@
 
 .footer {
   height: 4rem;
-  background: rgb(40, 40, 40);
+  background: #202020; /* Dark footer background */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,32 +1,32 @@
 .introContainer {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
   
-  .particlesBg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;  /* Ensure particles stay behind content */
-  }
-  
-  #intro {
-    position: relative;
-    z-index: 2; /* Ensure content stays above particles */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 4rem 2rem;
-    background: linear-gradient(to right, #181818, #1c1c1c);
-  }
+  /*.particlesBg {*/
+  /*  position: absolute;*/
+  /*  width: 100%;*/
+  /*  height: 100%;*/
+  /*  top: 0;*/
+  /*  left: 0;*/
+  /*  z-index: -500;  !* Ensure particles stay behind content *!*/
+  /*}*/
+
+#intro {
+  position: relative;
+  z-index: 2; /* Ensure content stays above particles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #181818, #1c1c1c);
+}
   
   .introContent {
     font-size: 2.5rem;

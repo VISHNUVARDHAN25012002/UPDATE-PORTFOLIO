@@ -92,8 +92,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative; /* Ensures sections stay above particles but below navbar */
-  z-index: 2;
+
   }
   
   .skillTitle {
