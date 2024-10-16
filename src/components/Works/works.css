@@ -1,0 +1,112 @@
+/* #works{
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:0 1rem ;
+}
+
+.workstittle{
+    margin: 1rem 0;
+    font-size: 3rem;
+
+}
+.workDesc{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.worksImgs{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.worksImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+   
+    
+}
+ .workBtn{
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border:none;
+    border-radius: 2rem;
+    background: #f1f1f1;
+    font-size: 1rem;
+} 
+@media screen and (max-width:580px) {
+    .worksImg{
+        height: 48vh;
+      
+    }
+    
+} */
+#works {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative; /* Ensures sections stay above particles but below navbar */
+    z-index: 2;
+  }
+  
+  .workstittle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #f9d342;
+  }
+  
+  .workDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #b8b8b8;
+  }
+  
+  .worksImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .worksImg {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .worksImg:hover {
+    transform: scale(1.05);
+  }
+  
+  .workBtn {
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: #f9d342;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .workBtn:hover {
+    background-color: #e6b322;
+  }
+  
+  @media screen and (max-width: 580px) {
+    .worksImg {
+      height: 48vh;
+    }
+  }
+  

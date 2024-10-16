@@ -1,0 +1,160 @@
+/* #contactPage{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+.contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contactform{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name,.email,.msg{
+    font-size: medium;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40,40,40);
+
+}
+.submitBtn{
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75em 3.5rem ;
+
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    object-fit: cover;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+}
+    
+@media screen and (max-width:580px) {
+    .links{
+        display: flex;
+        flex-wrap:wrap ;
+    }
+} */
+ #contactPage {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #202020;
+  position: relative; /* Ensures sections stay above particles but below navbar */
+  z-index: 2;
+}
+
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+  color: #b8b8b8;
+}
+
+.contactform {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.name,
+.email,
+.msg {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+  box-sizing: border-box;
+}
+
+.submitBtn {
+  background: #f9d342;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.link {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  height: 4rem;
+  background: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: small;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .link {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .name,
+  .email,
+  .msg {
+    padding: 0.5rem;
+  }
+
+  .submitBtn {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
