@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4e7e262.css",
+    "main.js": "/static/js/main.a8bf7c01.js",
+    "static/media/IMG_5616.JPG": "/static/media/IMG_5616.fcfc053aff9d7f561445.JPG",
+    "static/media/portfolio-6.png": "/static/media/portfolio-6.4a10fac7d271e87859e9.png",
+    "static/media/portfolio-2.png": "/static/media/portfolio-2.33d06b368b4e6395030e.png",
+    "static/media/portfolio-4.png": "/static/media/portfolio-4.8e8bac5e33dc3f211e2b.png",
+    "static/media/portfolio-1.png": "/static/media/portfolio-1.b33adf772d54ab33e953.png",
+    "static/media/VISHNU VARDHAN R.pdf": "/static/media/VISHNU VARDHAN R.1e14c59ce65468b38f19.pdf",
+    "static/media/portfolio-5.png": "/static/media/portfolio-5.bf754db8618dd60ec6f1.png",
+    "static/media/portfolio-3.png": "/static/media/portfolio-3.ca4192894d93b08ad3b5.png",
+    "static/media/logo.png": "/static/media/logo.4351bbdcac07031ec06a.png",
+    "static/media/SDevop.png": "/static/media/SDevop.8ccb181e39e424b37c00.png",
+    "static/media/sql.png": "/static/media/sql.6ac8f8b136b167811122.png",
+    "static/media/github1.png": "/static/media/github1.b6522b6abf666caccef7.png",
+    "static/media/ui-design.png": "/static/media/ui-design.c4acd455fc2040eddcc8.png",
+    "static/media/instagram.png": "/static/media/instagram.0bcd1dcb7d853c327af7.png",
+    "index.html": "/index.html",
+    "main.a4e7e262.css.map": "/static/css/main.a4e7e262.css.map",
+    "main.a8bf7c01.js.map": "/static/js/main.a8bf7c01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4e7e262.css",
+    "static/js/main.a8bf7c01.js"
+  ]
+}
