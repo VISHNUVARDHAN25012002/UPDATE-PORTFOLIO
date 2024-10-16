@@ -27,8 +27,10 @@
 
 .hello {
   font-size: 1.75rem;
-  font-weight: 100;
+  //font-weight: 100;
   color: #f9f9f9;
+  font-weight: bold;
+
 }
 
 .introText {
