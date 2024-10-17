@@ -1,15 +1,14 @@
 #tsparticles {
-    position: fixed;
+    position: fixed; /* Ensure it's always fixed in the background */
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1; /* Ensure particles are behind content */
+    z-index: -1; /* Keep particles in the background */
 }
-
 
 .container,
 section {
     position: relative; /* Ensure the content layers are above particles */
-    z-index: 3; /* Ensure your content is on top of the particles */
+    z-index: 2; /* Ensure your content is on top of the particles */
 }

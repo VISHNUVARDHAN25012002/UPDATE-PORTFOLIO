@@ -13,7 +13,7 @@ function App() {
     return (
         <>
             <ParticleTest />
-            <div style={{ position: 'relative', zIndex: -1 }}>
+            <div style={{ position: 'relative', zIndex: 0 }}>
                 <Navbar />
                 <Intro />
                 <Skills />
