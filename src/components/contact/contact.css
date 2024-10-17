@@ -17,8 +17,8 @@
   align-items: center;
   padding: 2rem 1rem;
   background: #181818;
-  position: relative; /* Ensures content sections stay above particles */
-  z-index: 2;
+  position: relative; /* Above particles */
+  z-index: 1; /* Above particles */
 }
 
 
