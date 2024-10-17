@@ -35,7 +35,9 @@ const Contact = () => {
 
                 <div className="links">
                     <img src={FacebookIcon} alt="Facebook" className="link"/>
+                    <a href="https://www.instagram.com/vishnu.25/profilecard/?igsh=MXcxNWVpM2V0OHhzaw==" target="_blank">
                     <img src={InstagramIcon} alt="Instagram" className="link"/>
+                    </a>
                     <a href="https://www.linkedin.com/in/vishnu-vardhan-r-232026196/" target="_blank">
                     <img src={LinkedinIcon} alt="Linkedin" className="link"/>
                     </a>
