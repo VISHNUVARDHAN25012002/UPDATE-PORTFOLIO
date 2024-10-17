@@ -1,14 +1,3 @@
-#tsparticles {
-  position: fixed; /* Ensures the particles cover the entire viewport */
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0; /* Particles stay behind the content */
-}
-
-
-
 #contactPage {
   margin: 0 auto;
   text-align: center;
@@ -16,17 +5,16 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  background: #181818;
+  background: transparent; /* No solid background */
   position: relative; /* Above particles */
   z-index: 1; /* Above particles */
 }
-
 
 .contactDesc {
   padding: 1rem;
   font-size: 1.1rem; /* Slightly larger text for readability */
   font-weight: 300;
-  color: #b8b8b8; /* Light grey for description text */
+  color: #f9d342; /* Change to match your portfolio's text color */
 }
 
 .contactform {
@@ -48,7 +36,7 @@
   color: #fff; /* White text for form fields */
   border: none;
   border-radius: 0.5rem;
-  background: #333; /* Darker background for form fields */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent fields */
   box-sizing: border-box;
 }
 
@@ -87,7 +75,7 @@
 
 .footer {
   height: 4rem;
-  background: #202020; /* Dark footer background */
+  background: transparent; /* No solid background for footer */
   display: flex;
   align-items: center;
   justify-content: center;

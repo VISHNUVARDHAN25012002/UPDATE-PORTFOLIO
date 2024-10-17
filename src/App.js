@@ -8,12 +8,15 @@ import Footer from "./components/Footer/footer";
 import ParticleTest from "./components/ParticleTest/ParticleTest";
 import "./components/ParticleTest/ParticleTest.css"; // Ensure correct path
 import "./App.css"
+import CanvasAnimation from "./components/ParticleTest/CanvasAnimation"
 
 function App() {
     return (
         <>
             <ParticleTest />
             <div style={{ position: 'relative', zIndex: 0 }}>
+            {/*    <CanvasAnimation />*/}
+            {/*    <div style={{ position: 'relative', zIndex: 1 }}>*/}
                 <Navbar />
                 <Intro />
                 <Skills />
