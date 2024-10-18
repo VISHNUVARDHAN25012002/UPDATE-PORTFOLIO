@@ -24,6 +24,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 600px; /* Restrict width on larger screens */
+  padding: 0 1rem; /* Add padding for equal left-right spacing */
+  box-sizing: border-box;
 }
 
 .name,
@@ -89,9 +92,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .link {
-    height: 2.5rem;
-    width: 2.5rem;
+  #contactPage {
+    padding: 2rem 1.5rem; /* Increase padding on mobile for equal left-right spacing */
+  }
+
+  .contactform {
+    width: 100%; /* Ensure the form spans full width */
+    padding: 0 1.5rem; /* Add left-right padding for equal spacing */
+    max-width: 100%; /* Allow form to stretch fully on mobile */
   }
 
   .name,

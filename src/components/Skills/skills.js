@@ -32,32 +32,34 @@ const Skills = () => {
             <section id="skills">
                 <span className="skillTitle fade-in">What I do</span>
                 <span className="skillDesc fade-in">
-    <ul>
-        <li>
-            I am passionate about creating <span className="highlight">dynamic</span> and <span className="highlight">scalable applications</span>.
-        </li>
-        <li>
-            As a <strong>Fullstack Java Developer</strong>, I focus on building <span className="highlight">responsive web solutions</span> using <span
-            className="highlight">Java</span>, <span className="highlight">Spring Boot</span>, and modern frontend technologies.
-        </li>
-        <li>
-            My expertise lies in developing
-            robust backend services and creating intuitive <span className="highlight">RESTful APIs</span>.
-        </li>
-        <li>
-            I specialize in integrating seamless data interactions with relational databases like <span
-            className="highlight">MySQL</span> and <span className="highlight">Hibernate</span>.
-        </li>
-        <li>
-            I <span className="highlight">optimize application performance</span> and ensuring every line of code contributes to a
-            high-quality, efficient product.
-        </li>
+                    <ul>
+                        <li>
+                            I am passionate about creating <span className="highlight">dynamic</span> and <span
+                            className="highlight">scalable applications</span>.
+                        </li>
+                        <li>
+                            As a <strong>Fullstack Java Developer</strong>, I focus on building <span
+                            className="highlight">responsive web solutions</span> using <span
+                            className="highlight">Java</span>, <span className="highlight">Spring Boot</span>, and modern frontend technologies.
+                        </li>
+                        <li>
+                            My expertise lies in developing robust backend services and creating intuitive <span
+                            className="highlight">RESTful APIs</span>.
+                        </li>
+                        <li>
+                            I specialize in integrating seamless data interactions with relational databases like <span
+                            className="highlight">MySQL</span> and <span className="highlight">Hibernate</span>.
+                        </li>
+                        <li>
+                            I <span className="highlight">optimize application performance</span> and ensuring every line of code contributes to a
+                            high-quality, efficient product.
+                        </li>
+                    </ul>
+                         <div className="special-text">
+                        Let’s build something <span className="highlight1">innovative together</span>!
+                    </div>
 
-            Let’s build something <span className="highlight">innovative together</span>!
-
-    </ul>
-</span>
-
+                </span>
 
                 <div className="skillBars">
                     <div className="skillBar fade-in">

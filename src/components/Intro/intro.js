@@ -25,7 +25,7 @@ const Intro = () => {
               I'm <span className="introname">Vishnu</span><br /> FullStack Developer
             </span>
               <p className="intropara">
-                I am a FullStack Developer, I build things using Java and gaining knowledge in Recent Technology
+               I build things using Java Springboot,React and gaining knowledge in Recent Technology
               </p>
               <button className="btn" onClick={handleResumeDownload}>
                 <img src={btnImg} alt="Hire Me" className="btnImg" />Resume

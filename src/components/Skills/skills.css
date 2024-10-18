@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 1rem; /* Add some padding for better spacing */
+  padding: 0 1rem;
 }
 
 /* Title styling */
@@ -15,10 +15,10 @@
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
-  color: #f9d342; /* Yellow color for the title */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Initial transform */
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition */
+  color: #f9d342;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 /* Skill description (content) */
@@ -27,26 +27,44 @@
   font-size: 1.2rem;
   max-width: 50rem;
   padding: 0 2rem;
-  color: #b8b8b8; /* Light gray for the description text */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Initial transform */
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition */
-  list-style-type: disc; /* Add bullets for list styling */
-  text-align: justify; /* Align content to the left for better readability */
+  color: #b8b8b8;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  list-style-type: disc;
+  text-align: justify;
+}
+
+/* Special text to stand out */
+.special-text {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid #f9d342;
+  display: inline-block;
 }
 
 /* Add space between each list item (bullet point) */
 .skillDesc li {
-  margin-bottom: 1rem; /* Adds space between bullet points */
+  margin-bottom: 1rem;
 }
 
 /* Highlight key points */
 .highlight {
-  color: #f9d342; /* Yellow color to highlight important keywords */
-  font-weight: bold; /* Bold to emphasize */
+  color: #f9d342;
+  font-weight: bold;
 }
 
-/* When the fade-in-visible class is applied, the content will fade in */
+.highlight1 {
+  color: #f9d342;
+  font-weight: bold;
+}
+
+/* Fade-in visibility */
 .fade-in-visible {
   opacity: 1;
   transform: translateY(0);
@@ -67,23 +85,23 @@
   margin: 1.5rem 0;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: #333; /* Dark background for skill bars */
+  background: #333;
   text-align: left;
   flex-direction: row;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Start with vertical shift */
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .skillBar.fade-in-visible {
   opacity: 1;
-  transform: translateY(0); /* End state */
+  transform: translateY(0);
 }
 
 .skillBar:hover {
-  transform: translateY(-5px); /* Subtle hover effect */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .skillBarImg {
@@ -114,26 +132,26 @@
 /* Mobile Responsiveness */
 @media screen and (max-width: 540px) {
   #skills {
-    padding: 0 1rem; /* Add padding for left-right spacing on mobile */
+    padding: 0 1rem;
   }
 
   .skillTitle {
-    font-size: 2.5rem; /* Adjust title size for smaller screens */
+    font-size: 2.5rem;
   }
 
   .skillDesc {
-    font-size: 1rem; /* Smaller font size for mobile */
-    text-align: left; /* Maintain left alignment */
-    padding: 0 1.5rem; /* Add padding to the text on mobile */
-    list-style-type: disc; /* Keep bullet points for mobile */
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 1.5rem;
+    list-style-type: disc;
   }
 
   .skillDesc li {
-    margin-bottom: 1rem; /* Maintain spacing between bullet points on mobile */
+    margin-bottom: 1rem;
   }
 
   .skillBars {
-    max-width: 90%; /* Ensure bars fit within the screen on mobile */
+    max-width: 90%;
   }
 
   .skillBar {
@@ -157,5 +175,11 @@
 
   .skillBarText p {
     font-size: 1rem;
+  }
+
+  /* Mobile responsiveness for the special text */
+  .special-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
   }
 }
