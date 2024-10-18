@@ -24,9 +24,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 600px; /* Restrict width on larger screens */
-  padding: 0 1rem; /* Add padding for equal left-right spacing */
-  box-sizing: border-box;
+  max-width: 500px; /* Limit max-width for desktop */
 }
 
 .name,
@@ -44,15 +42,16 @@
 }
 
 .submitBtn {
-  background: #f9d342; /* Bright button color for contrast */
+  background: #f9d342;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.75rem 2rem;
-  margin-top: 1rem;
-  color: black; /* Black text on button */
-  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem; /* Adjust padding for a smaller button */
+  color: black;
+  font-size: 1rem; /* Slightly smaller font size */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 .submitBtn:hover {
@@ -91,15 +90,11 @@
   margin: 0;
 }
 
+/* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
-  #contactPage {
-    padding: 2rem 1.5rem; /* Increase padding on mobile for equal left-right spacing */
-  }
-
-  .contactform {
-    width: 100%; /* Ensure the form spans full width */
-    padding: 0 1.5rem; /* Add left-right padding for equal spacing */
-    max-width: 100%; /* Allow form to stretch fully on mobile */
+  .link {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   .name,
@@ -110,9 +105,38 @@
 
   .submitBtn {
     padding: 0.5rem 1.5rem;
+    font-size: 0.9rem; /* Slightly smaller button for mobile */
   }
 
   .footer {
     font-size: 12px;
+  }
+
+  .contactform {
+    max-width: 90%; /* Ensure form doesn't take up the entire width */
+    margin: 0 auto; /* Center form on mobile */
+  }
+}
+
+/* Desktop and Tablet View Adjustments */
+@media screen and (min-width: 768px) {
+  .contactform {
+    max-width: 600px; /* Wider form on larger screens */
+  }
+
+  .submitBtn {
+    padding: 0.5rem 1.5rem; /* Adjust for larger screens */
+    font-size: 1rem; /* Maintain balanced font size */
+  }
+}
+
+/* Center elements on desktop */
+@media screen and (min-width: 1024px) {
+  #contactPage {
+    max-width: 70%; /* Keep content centered and balanced */
+  }
+
+  .contactform {
+    max-width: 500px; /* Center the form */
   }
 }
