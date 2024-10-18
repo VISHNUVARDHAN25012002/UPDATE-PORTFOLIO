@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Proper sizing */
+    text-decoration: none; /* Remove text decoration */
+}
+
+body {
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow-y: scroll; /* Allows vertical scrolling if necessary */
+    font-family: 'Poppins', sans-serif; /* Global font */
+}
