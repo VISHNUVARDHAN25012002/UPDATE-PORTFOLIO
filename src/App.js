@@ -8,6 +8,7 @@ import Footer from "./components/Footer/footer";
 import ParticleTest from "./components/ParticleTest/ParticleTest";
 import "./components/ParticleTest/ParticleTest.css"; // Ensure correct path
 import "./App.css"
+
 import WaveAnimation from "./components/ParticleTest/WaveAnimation"
 import StarfieldAnimation from "./components/ParticleTest/StarfieldAnimation"
 import CanvasAnimation from "./components/ParticleTest/CanvasAnimation"

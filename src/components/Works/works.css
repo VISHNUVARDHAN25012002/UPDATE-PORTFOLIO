@@ -1,112 +1,91 @@
-/* #works{
-    margin: 0 auto;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding:0 1rem ;
-}
-
-.workstittle{
-    margin: 1rem 0;
-    font-size: 3rem;
-
-}
-.workDesc{
-    font-weight: 300;
-    font-size: 1rem;
-}
-.worksImgs{
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.worksImg{
-    object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
-   
-    
-}
- .workBtn{
-    margin: 3rem 0;
-    padding: 0.5rem 2.5rem;
-    border:none;
-    border-radius: 2rem;
-    background: #f1f1f1;
-    font-size: 1rem;
-} 
-@media screen and (max-width:580px) {
-    .worksImg{
-        height: 48vh;
-      
-    }
-    
-} */
 #works {
-    margin: 0 auto;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
-    position: relative; /* Ensures sections stay above particles but below navbar */
-    z-index: 2;
+  margin: 0 auto;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative; /* Ensures sections stay above particles but below navbar */
+  z-index: 2;
+}
+
+.workstittle {
+  margin: 1rem 0;
+  font-size: 3rem;
+  color: #f9d342;
+}
+
+.workDesc {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #b8b8b8;
+  margin-bottom: 2rem;
+}
+
+.worksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.worksImg {
+  object-fit: contain;
+  width: 100%; /* Full width within container */
+  max-width: 20rem; /* Max width to ensure it doesn't get too large */
+  margin: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.worksImg:hover {
+  transform: scale(1.05);
+}
+
+.workBtn {
+  margin: 3rem 0;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: #f9d342;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workBtn:hover {
+  background-color: #e6b322;
+}
+
+/* Mobile responsiveness for small screens */
+@media screen and (max-width: 580px) {
+  #works {
+    padding: 0 2rem; /* Add more space to the left and right on mobile */
   }
-  
-  .workstittle {
-    margin: 1rem 0;
-    font-size: 3rem;
-    color: #f9d342;
-  }
-  
-  .workDesc {
-    font-weight: 300;
-    font-size: 1rem;
-    color: #b8b8b8;
-  }
-  
-  .worksImgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
+
   .worksImg {
-    object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
-    transition: transform 0.3s ease-in-out;
+    width: 90%; /* Make images take 90% of the available width */
+    max-width: none; /* Remove the max width to allow scaling */
+    margin-bottom: 1rem; /* Add some space below images */
   }
-  
-  .worksImg:hover {
-    transform: scale(1.05);
+
+  .workstittle {
+    font-size: 2.5rem; /* Adjust title size for smaller screens */
   }
-  
+
+  .workDesc {
+    font-size: 0.9rem; /* Slightly smaller description font */
+    margin-bottom: 1.5rem;
+  }
+
   .workBtn {
-    margin: 3rem 0;
-    padding: 0.5rem 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    background: #f9d342;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 0.4rem 2rem; /* Adjust padding for smaller buttons */
+    font-size: 0.9rem; /* Smaller button text */
   }
-  
-  .workBtn:hover {
-    background-color: #e6b322;
+
+  /* Add space between images */
+  .worksImgs {
+    flex-direction: column;
   }
-  
-  @media screen and (max-width: 580px) {
-    .worksImg {
-      height: 48vh;
-    }
-  }
-  
+}

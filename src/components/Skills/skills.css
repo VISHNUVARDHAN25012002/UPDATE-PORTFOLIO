@@ -1,193 +1,161 @@
-/* #skills{
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-.skillDesc{
-    font-weight: 300;
-    font-size: 1 rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-
-}
-.skillBars{
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
-
-}
-.skillBar{
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: rgb(50,50,50);
-}
-.skillBarImg{
-    object-fit: cover;
-    height: 6rem;
-    width: 6 rem;
-    margin: 2rem;
-    
-}
-.skillBarText{
-    margin: 2rem;
-    font-size: 0.9rem;
-    font-weight: 200;
-    color: white;
-    
-}.skillBarText1{
-    margin: 2rem;
-    font-size: 0.9rem;
-    font-weight: 200;
-    padding: 2rem;
-    color: white;
-    
-}
-@media screen and (max-width:540px) {
-    .skillBarText>p{
-        font-size: 4vw;
-    }
-    .skillBarImg{
-        height: 5.25rem;
-        width: 5.25rem;
-    }
-    .skillBarText1>h2{
-        font-size: 5vw;
-    }
-    .skillBarText>h2{
-        font-size: 5vw;
-    }
-    
-}
-
-@media screen and (max-width:767px) {
-    .skillBar{
-       flex-direction: column;
-       text-align: center;
-    }
-    .skillBarText{
-        margin: 0;
-        
-    }.skillBarText1{
-        margin: 0;
-        
-    }
-} */
+/* General styling for the Skills section */
 #skills {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem; /* Add some padding for better spacing */
+}
 
+/* Title styling */
+.skillTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #f9d342; /* Yellow color for the title */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial transform */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition */
+}
+
+/* Skill description (content) */
+.skillDesc {
+  font-weight: 500;
+  font-size: 1.2rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  color: #b8b8b8; /* Light gray for the description text */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial transform */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition */
+  list-style-type: disc; /* Add bullets for list styling */
+  text-align: justify; /* Align content to the left for better readability */
+}
+
+/* Add space between each list item (bullet point) */
+.skillDesc li {
+  margin-bottom: 1rem; /* Adds space between bullet points */
+}
+
+/* Highlight key points */
+.highlight {
+  color: #f9d342; /* Yellow color to highlight important keywords */
+  font-weight: bold; /* Bold to emphasize */
+}
+
+/* When the fade-in-visible class is applied, the content will fade in */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skill bars section */
+.skillBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.skillBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #333; /* Dark background for skill bars */
+  text-align: left;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start with vertical shift */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+.skillBar.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0); /* End state */
+}
+
+.skillBar:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.skillBarImg {
+  object-fit: contain;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1rem;
+}
+
+.skillBarText {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.skillBarText h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.skillBarText p {
+  font-size: 1.1rem;
+  color: #b8b8b8;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 540px) {
+  #skills {
+    padding: 0 1rem; /* Add padding for left-right spacing on mobile */
   }
-  
+
   .skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-    color: #f9d342;
+    font-size: 2.5rem; /* Adjust title size for smaller screens */
   }
-  
+
   .skillDesc {
-    font-weight: 300;
-    font-size: 1.2rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-    color: #b8b8b8;
+    font-size: 1rem; /* Smaller font size for mobile */
+    text-align: left; /* Maintain left alignment */
+    padding: 0 1.5rem; /* Add padding to the text on mobile */
+    list-style-type: disc; /* Keep bullet points for mobile */
   }
-  
+
+  .skillDesc li {
+    margin-bottom: 1rem; /* Maintain spacing between bullet points on mobile */
+  }
+
   .skillBars {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+    max-width: 90%; /* Ensure bars fit within the screen on mobile */
   }
-  
+
   .skillBar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns items closely */
-    margin: 1.5rem 0;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: #333;
-    text-align: left;
-    flex-direction: row; /* Horizontal layout for desktop */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
   }
-  
-  .skillBar:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hover effect */
-  }
-  
+
   .skillBarImg {
-    object-fit: contain;
-    height: 6rem;
-    width: 6rem;
-    margin-right: 1rem; /* Close gap between image and text */
-  }
-  
-  .skillBarText {
     margin-right: 0;
-    padding-left: 0; /* No padding to bring text closer */
-    font-size: 1.2rem; /* Ensure consistent font size */
-    font-weight: 300;
-    color: white;
-    text-align: left;
-    flex-grow: 1; /* Allows text to take up available space */
-    line-height: 1.7; /* Increase line height for readability */
+    margin-bottom: 1rem;
   }
-  
+
+  .skillBarText {
+    text-align: center;
+  }
+
   .skillBarText h2 {
-    font-size: 1.8rem; /* Consistent heading size */
-    margin-bottom: 0.75rem; /* Consistent spacing below heading */
+    font-size: 1.5rem;
   }
-  
+
   .skillBarText p {
-    font-size: 1.1rem; /* Consistent paragraph size */
-    color: #b8b8b8;
+    font-size: 1rem;
   }
-  
-  /* Responsive design for mobile devices */
-  @media screen and (max-width: 540px) {
-    .skillBar {
-      flex-direction: column; /* Stack vertically on mobile */
-      text-align: center;
-    }
-  
-    .skillBarImg {
-      margin-right: 0;
-      margin-bottom: 1rem; /* Add space below the image */
-    }
-  
-    .skillBarText {
-      margin-right: 0;
-      padding-left: 0; /* Remove extra padding for mobile */
-      text-align: center; /* Center text for mobile */
-    }
-  
-    .skillBarText h2 {
-      font-size: 1.5rem; /* Adjust heading size for mobile */
-    }
-  
-    .skillBarText p {
-      font-size: 1rem;
-    }
-  }
-    
+}
