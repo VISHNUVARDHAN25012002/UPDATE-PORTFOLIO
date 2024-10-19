@@ -1,7 +1,7 @@
 import React from "react";
 import './intro.css';
 import bg from '../../assets/IMG_5616.JPG';
-import btnImg from '../../assets/hireme.png';
+import btnImg from '../../assets/resumeimg2.png';
 import resume from '../../assets/VISHNU VARDHAN R.pdf'; // Update with the correct path to your resume
 
 const Intro = () => {
