@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.png';
 import menu from '../../assets/menu.png';
 import { Link } from 'react-scroll';
+import Contact from "../contact/contact";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
                 <Link to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
                 <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portfolio</Link>
             </div>
-            <Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>
+            <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500}>
                 <button className="desktopmenuBtn">
                     <img src={contactImg} alt="contactImg" className="desktopmenuImg" />
                     Contact me
@@ -27,7 +28,7 @@ const Navbar = () => {
                 <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Home</Link>
                 <Link to="skills" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>About</Link>
                 <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Portfolio</Link>
-                <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Contact</Link>
+                <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Contact</Link>
             </div>
         </nav>
     );

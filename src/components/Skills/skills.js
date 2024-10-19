@@ -66,7 +66,7 @@ const Skills = () => {
                         <img src={UIDesign} className="skillBarImg" alt="UI Design"/>
                         <div className="skillBarText">
                             <h2>Website Design</h2>
-                            <p>I design websites using HTML, CSS, React, and JavaScript.</p>
+                            <p>Designing websites using HTML, CSS, React, and JavaScript.</p>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ const Skills = () => {
                         <img src={SDesign} className="skillBarImg" alt="Backend Development"/>
                         <div className="skillBarText">
                             <h2>Back-end Development</h2>
-                            <p>I use Java and Spring Boot for back-end development.</p>
+                            <p>Java and Spring Boot for back-end development.</p>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@ const Skills = () => {
                         <img src={SQL} className="skillBarImg" alt="MySQL"/>
                         <div className="skillBarText">
                             <h2>MySQL</h2>
-                            <p>I work with MySQL to handle database interactions and optimize queries.</p>
+                            <p>I perform with MySQL to handle database interactions and optimize queries.</p>
                         </div>
                     </div>
                 </div>
