@@ -1,13 +1,9 @@
 {
   "files": {
-    "main.css": "/UPDATE-PORTFOLIO/static/css/main.524c571d.css",
-    "main.js": "/UPDATE-PORTFOLIO/static/js/main.cd999496.js",
+    "main.css": "/UPDATE-PORTFOLIO/static/css/main.8f8165a8.css",
+    "main.js": "/UPDATE-PORTFOLIO/static/js/main.4760c597.js",
     "static/media/IMG_5616.JPG": "/UPDATE-PORTFOLIO/static/media/IMG_5616.fcfc053aff9d7f561445.JPG",
-    "static/media/portfolio-6.png": "/UPDATE-PORTFOLIO/static/media/portfolio-6.4a10fac7d271e87859e9.png",
-    "static/media/portfolio-4.png": "/UPDATE-PORTFOLIO/static/media/portfolio-4.8e8bac5e33dc3f211e2b.png",
     "static/media/VISHNU VARDHAN R.pdf": "/UPDATE-PORTFOLIO/static/media/VISHNU VARDHAN R.1e14c59ce65468b38f19.pdf",
-    "static/media/portfolio-5.png": "/UPDATE-PORTFOLIO/static/media/portfolio-5.bf754db8618dd60ec6f1.png",
-    "static/media/portfolio-3.png": "/UPDATE-PORTFOLIO/static/media/portfolio-3.ca4192894d93b08ad3b5.png",
     "static/media/Screenshot 2024-10-18 162739.png": "/UPDATE-PORTFOLIO/static/media/Screenshot 2024-10-18 162739.87e3a9a50c793e930ed0.png",
     "static/media/Screenshot 2024-10-18 162700.png": "/UPDATE-PORTFOLIO/static/media/Screenshot 2024-10-18 162700.3115814464dffa8b5a4a.png",
     "static/media/logo.png": "/UPDATE-PORTFOLIO/static/media/logo.4351bbdcac07031ec06a.png",
@@ -17,11 +13,11 @@
     "static/media/ui-design.png": "/UPDATE-PORTFOLIO/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "static/media/instagram.png": "/UPDATE-PORTFOLIO/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/UPDATE-PORTFOLIO/index.html",
-    "main.524c571d.css.map": "/UPDATE-PORTFOLIO/static/css/main.524c571d.css.map",
-    "main.cd999496.js.map": "/UPDATE-PORTFOLIO/static/js/main.cd999496.js.map"
+    "main.8f8165a8.css.map": "/UPDATE-PORTFOLIO/static/css/main.8f8165a8.css.map",
+    "main.4760c597.js.map": "/UPDATE-PORTFOLIO/static/js/main.4760c597.js.map"
   },
   "entrypoints": [
-    "static/css/main.524c571d.css",
-    "static/js/main.cd999496.js"
+    "static/css/main.8f8165a8.css",
+    "static/js/main.4760c597.js"
   ]
 }
