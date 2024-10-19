@@ -7,7 +7,7 @@
   justify-content: center;
   text-align: center;
   padding: 0 1rem;
-  position: relative; /* Ensures sections stay above particles but below navbar */
+  position: relative;
   z-index: 2;
 }
 
@@ -26,21 +26,38 @@
 
 .worksImgs {
   display: flex;
+  justify-content: space-between; /* Ensures separation between cards */
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem; /* Adds space between the cards */
+}
+
+.card {
+  perspective: 1000px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for left tilt */
+.card.tilt-left .worksImg {
+  transform: rotateY(-10deg) translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for right tilt */
+.card.tilt-right .worksImg {
+  transform: rotateY(10deg) translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .worksImg {
   object-fit: contain;
-  width: 100%; /* Full width within container */
-  max-width: 20rem; /* Max width to ensure it doesn't get too large */
+  width: 100%;
+  max-width: 20rem;
   margin: 0.5rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.worksImg:hover {
-  transform: scale(1.05);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+  transform-style: preserve-3d;
 }
 
 .workBtn {
@@ -61,30 +78,29 @@
 /* Mobile responsiveness for small screens */
 @media screen and (max-width: 580px) {
   #works {
-    padding: 0 2rem; /* Add more space to the left and right on mobile */
+    padding: 0 2rem;
   }
 
   .worksImg {
-    width: 90%; /* Make images take 90% of the available width */
-    max-width: none; /* Remove the max width to allow scaling */
-    margin-bottom: 1rem; /* Add some space below images */
+    width: 90%;
+    max-width: none;
+    margin-bottom: 1rem;
   }
 
   .workstittle {
-    font-size: 2.5rem; /* Adjust title size for smaller screens */
+    font-size: 2.5rem;
   }
 
   .workDesc {
-    font-size: 0.9rem; /* Slightly smaller description font */
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
 
   .workBtn {
-    padding: 0.4rem 2rem; /* Adjust padding for smaller buttons */
-    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.4rem 2rem;
+    font-size: 0.9rem;
   }
 
-  /* Add space between images */
   .worksImgs {
     flex-direction: column;
   }
