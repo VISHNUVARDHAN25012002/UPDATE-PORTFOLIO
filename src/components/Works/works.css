@@ -1,107 +1,119 @@
+/* General styles for the Works section */
 #works {
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 60rem; /* Limit the maximum width */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 1rem;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text */
+  padding: 2rem 1rem; /* Padding for the section */
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Ensure the content appears above other elements */
 }
 
+/* Title styling */
 .workstittle {
-  margin: 1rem 0;
-  font-size: 3rem;
-  color: #f9d342;
+  margin: 1rem 0; /* Margin for spacing */
+  font-size: 3rem; /* Large font size for the title */
+  color: #f9d342; /* Title color */
 }
 
+/* Description styling */
 .workDesc {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #b8b8b8;
-  margin-bottom: 2rem;
+  font-weight: 500; /* Medium weight for description */
+  font-size: 1rem; /* Font size for description */
+  color: #b8b8b8; /* Description text color */
+  margin-bottom: 2rem; /* Space below the description */
 }
 
+/* Container for the certification images */
 .worksImgs {
-  display: flex;
-  justify-content: space-between; /* Ensures separation between cards */
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem; /* Adds space between the cards */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between cards */
+  align-items: center; /* Center align items vertically */
+  flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+  gap: 2rem; /* Space between the cards */
 }
 
+/* Card styling */
 .card {
-  perspective: 1000px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  perspective: 1000px; /* Perspective for 3D effect */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 /* Hover effect for left tilt */
 .card.tilt-left .worksImg {
-  transform: rotateY(-10deg) translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: rotateY(-10deg) translateY(-10px); /* Tilt effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on tilt */
 }
 
 /* Hover effect for right tilt */
 .card.tilt-right .worksImg {
-  transform: rotateY(10deg) translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: rotateY(10deg) translateY(-10px); /* Tilt effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on tilt */
 }
 
+/* Image styling for the cards */
 .worksImg {
-  object-fit: contain;
-  width: 100%;
-  max-width: 20rem;
-  margin: 0.5rem;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  position: relative;
-  transform-style: preserve-3d;
+  object-fit: contain; /* Maintain aspect ratio */
+  width: 100%; /* Full width */
+  max-width: 20rem; /* Maximum width */
+  margin: 0.5rem; /* Margin around the image */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions */
+  position: relative; /* Positioning context */
+  transform-style: preserve-3d; /* Preserve 3D effect */
 }
 
+/* Button styling */
 .workBtn {
-  margin: 3rem 0;
-  padding: 0.5rem 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  background: #f9d342;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 3rem 0; /* Margin around the button */
+  padding: 0.5rem 2.5rem; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 2rem; /* Rounded corners */
+  background: #f9d342; /* Background color */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background change */
 }
 
+/* Button hover effect */
 .workBtn:hover {
-  background-color: #e6b322;
+  background-color: #e6b322; /* Darker shade on hover */
 }
 
-/* Mobile responsiveness for small screens */
+/* Mobile responsiveness */
 @media screen and (max-width: 580px) {
   #works {
-    padding: 0 2rem;
+    padding: 0 2rem; /* Adjust padding for mobile */
   }
 
   .worksImg {
-    width: 90%;
-    max-width: none;
-    margin-bottom: 1rem;
+    width: 90%; /* Full width for images on mobile */
+    max-width: none; /* Remove max-width constraint */
+    margin-bottom: 1rem; /* Space below images */
   }
 
   .workstittle {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Adjust title size for mobile */
   }
 
   .workDesc {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem; /* Adjust description size for mobile */
+    margin-bottom: 1.5rem; /* Adjust space below description */
   }
 
   .workBtn {
-    padding: 0.4rem 2rem;
-    font-size: 0.9rem;
+    padding: 0.4rem 2rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+  .highlight {
+    color: #f9d342; /* Highlight color */
+    font-weight: bold; /* Bold text */
   }
 
   .worksImgs {
-    flex-direction: column;
+    flex-direction: column; /* Stack cards vertically on mobile */
   }
 }
