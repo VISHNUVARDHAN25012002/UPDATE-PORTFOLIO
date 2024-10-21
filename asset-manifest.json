@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UPDATE-PORTFOLIO/static/css/main.8f8165a8.css",
-    "main.js": "/UPDATE-PORTFOLIO/static/js/main.ca2ca0d5.js",
+    "main.js": "/UPDATE-PORTFOLIO/static/js/main.35c051ed.js",
     "static/media/IMG_5616.JPG": "/UPDATE-PORTFOLIO/static/media/IMG_5616.fcfc053aff9d7f561445.JPG",
     "static/media/VISHNU VARDHAN R.pdf": "/UPDATE-PORTFOLIO/static/media/VISHNU VARDHAN R.1e14c59ce65468b38f19.pdf",
     "static/media/Screenshot 2024-10-18 162739.png": "/UPDATE-PORTFOLIO/static/media/Screenshot 2024-10-18 162739.87e3a9a50c793e930ed0.png",
@@ -15,10 +15,10 @@
     "static/media/instagram.png": "/UPDATE-PORTFOLIO/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/UPDATE-PORTFOLIO/index.html",
     "main.8f8165a8.css.map": "/UPDATE-PORTFOLIO/static/css/main.8f8165a8.css.map",
-    "main.ca2ca0d5.js.map": "/UPDATE-PORTFOLIO/static/js/main.ca2ca0d5.js.map"
+    "main.35c051ed.js.map": "/UPDATE-PORTFOLIO/static/js/main.35c051ed.js.map"
   },
   "entrypoints": [
     "static/css/main.8f8165a8.css",
-    "static/js/main.ca2ca0d5.js"
+    "static/js/main.35c051ed.js"
   ]
 }
