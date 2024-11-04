@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UPDATE-PORTFOLIO/static/css/main.635c87e5.css",
-    "main.js": "/UPDATE-PORTFOLIO/static/js/main.f5be53f5.js",
+    "main.js": "/UPDATE-PORTFOLIO/static/js/main.bcf18a40.js",
     "static/media/IMG_5616.JPG": "/UPDATE-PORTFOLIO/static/media/IMG_5616.fcfc053aff9d7f561445.JPG",
     "static/media/VISHNU VARDHAN R.pdf": "/UPDATE-PORTFOLIO/static/media/VISHNU VARDHAN R.1e14c59ce65468b38f19.pdf",
     "static/media/java.png": "/UPDATE-PORTFOLIO/static/media/java.9a7f240c1d2b87b2e865.png",
@@ -17,10 +17,10 @@
     "static/media/instagram.png": "/UPDATE-PORTFOLIO/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/UPDATE-PORTFOLIO/index.html",
     "main.635c87e5.css.map": "/UPDATE-PORTFOLIO/static/css/main.635c87e5.css.map",
-    "main.f5be53f5.js.map": "/UPDATE-PORTFOLIO/static/js/main.f5be53f5.js.map"
+    "main.bcf18a40.js.map": "/UPDATE-PORTFOLIO/static/js/main.bcf18a40.js.map"
   },
   "entrypoints": [
     "static/css/main.635c87e5.css",
-    "static/js/main.f5be53f5.js"
+    "static/js/main.bcf18a40.js"
   ]
 }
