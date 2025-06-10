@@ -21,13 +21,13 @@ function App() {
     return (
         <>
 
-            {/*<FireAnimation/>*/}
+            {/* <FireAnimation/> */}
             {/*<FirefliesAnimation/>*/}
             {/*    <CanvasAnimation />*/}
             {/*    <div style={{ position: 'relative', zIndex: 1 }}>*/}
             {/*<WaveAnimation/>*/}
-            {/*<StarfieldAnimation/>*/}
-            {/*<BubblesAnimation/>*/}
+            {/* <StarfieldAnimation/> */}
+            {/* <BubblesAnimation/> */}
             <ParticleTest />
             <div style={{ position: 'relative', zIndex: 1 }}>
 
