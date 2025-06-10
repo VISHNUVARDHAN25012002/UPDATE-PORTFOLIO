@@ -16,7 +16,7 @@
 .workstittle {
   margin: 1rem 0; /* Margin for spacing */
   font-size: 3rem; /* Large font size for the title */
-  color: #f9d342; /* Title color */
+  color: var(--accent-color); /* Title color */
 }
 
 /* Description styling */
@@ -72,7 +72,7 @@
   padding: 0.5rem 2.5rem; /* Padding inside the button */
   border: none; /* No border */
   border-radius: 2rem; /* Rounded corners */
-  background: #f9d342; /* Background color */
+  background: var(--accent-color); /* Background color */
   font-size: 1rem; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth background change */
@@ -109,7 +109,7 @@
     font-size: 0.9rem; /* Adjust button font size */
   }
   .highlight {
-    color: #f9d342; /* Highlight color */
+    color: var(--accent-color); /* Highlight color */
     font-weight: bold; /* Bold text */
   }
 
