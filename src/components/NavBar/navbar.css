@@ -1,6 +1,8 @@
 /* Navbar */
 .navbar {
-  background: #1e1e1e;
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -8,7 +10,8 @@
   position: sticky;
   top: 0;
   z-index: 999; /* Navbar always on top */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -32,13 +35,13 @@
 }
 
 .desktopMenuListItem:hover {
-  color: #f9d342;
+  color: var(--accent-color);
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #f9d342;
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .desktopmenuBtn {
-  background: #f9d342;
+  background: var(--accent-color);
   color: black;
   border: none;
   display: flex;
@@ -95,7 +98,7 @@
 }
 
 .ListItem:hover {
-  background-color: #f9d342;
+  background-color: var(--accent-color);
 }
 
 /* For mobile view */
