@@ -1,0 +1,7 @@
+.dragon-follower {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 2rem;
+    z-index: 3; /* above particle canvas */
+}

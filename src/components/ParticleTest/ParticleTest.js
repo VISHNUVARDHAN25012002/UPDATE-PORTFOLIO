@@ -27,7 +27,7 @@ const ParticleTest = () => {
                 },
             },
             size: {
-                value: 6, // Increased base size
+                value: 3, // Smaller base size so particles aren't overwhelming
                 random: true, // Randomize particle sizes for a dynamic look
                 anim: {
                     enable: true, // Enable size animation

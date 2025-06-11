@@ -17,6 +17,7 @@ import ConfettiAnimation from "./components/ParticleTest/ConfettiAnimation";
 import FirefliesAnimation from "./components/ParticleTest/FirefliesAnimation"
 import ShootingStarsAnimation from "./components/ParticleTest/ShootingStarsAnimation";
 import FireAnimation from "./components/ParticleTest/FireAnimation"
+import DragonFollower from "./components/DragonFollower/DragonFollower";
 function App() {
     return (
         <>
@@ -29,6 +30,7 @@ function App() {
             {/* <StarfieldAnimation/> */}
             {/* <BubblesAnimation/> */}
             <ParticleTest />
+            <DragonFollower />
             <div style={{ position: 'relative', zIndex: 1 }}>
 
                 <Navbar />
