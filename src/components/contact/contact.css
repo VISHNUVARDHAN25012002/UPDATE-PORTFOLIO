@@ -14,7 +14,7 @@
   padding: 1rem;
   font-size: 1.1rem; /* Slightly larger text for readability */
   font-weight: 300;
-  color: #f9d342; /* Change to match your portfolio's text color */
+  color: var(--accent-color); /* Change to match your portfolio's text color */
 }
 
 .contactform {
@@ -42,7 +42,7 @@
 }
 
 .submitBtn {
-  background: #f9d342;
+  background: var(--accent-color);
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem; /* Adjust padding for a smaller button */

@@ -15,7 +15,7 @@
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
-  color: #f9d342;
+  color: var(--accent-color);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
@@ -44,7 +44,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 10px;
-  border: 2px solid #f9d342;
+  border: 2px solid var(--accent-color);
   display: inline-block;
 }
 
@@ -55,12 +55,12 @@
 
 /* Highlight key points */
 .highlight {
-  color: #f9d342;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
 .highlight1 {
-  color: #f9d342;
+  color: var(--accent-color);
   font-weight: bold;
 }
 

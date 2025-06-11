@@ -16,7 +16,7 @@ import BubblesAnimation from "./components/ParticleTest/BubblesAnimation";
 import ConfettiAnimation from "./components/ParticleTest/ConfettiAnimation";
 import FirefliesAnimation from "./components/ParticleTest/FirefliesAnimation"
 import ShootingStarsAnimation from "./components/ParticleTest/ShootingStarsAnimation";
-import FireAnimation from "./components/ParticleTest/FireAnimation "
+import FireAnimation from "./components/ParticleTest/FireAnimation"
 function App() {
     return (
         <>

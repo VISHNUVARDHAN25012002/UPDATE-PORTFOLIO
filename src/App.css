@@ -1,14 +1,20 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #f9d342;
+    --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
 body {
-    background: rgb(30, 30, 30);
-    color: white;
+    background: var(--bg-gradient);
+    color: var(--text-color);
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     overflow-y: scroll; /* Allows vertical scrolling if necessary */
