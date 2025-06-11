@@ -67,7 +67,10 @@ const ParticleTest = () => {
             },
         },
         interactivity: {
-            detect_on: "canvas",
+            // Use the whole window for detecting mouse interactions so the
+            // particles remain interactive even when other elements overlap
+            // the canvas
+            detectsOn: "window",
             events: {
                 onHover: {
                     enable: true,
