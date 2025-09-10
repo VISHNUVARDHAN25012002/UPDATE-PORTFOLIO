@@ -53,7 +53,7 @@ const StarfieldAnimation = () => {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return <canvas ref={canvasRef} style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }} />;
 };

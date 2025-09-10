@@ -6,7 +6,6 @@ const WaveAnimation = () => {
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
-        let waveArray = [];
         let amplitude = 20; // Wave height
         let frequency = 0.02; // Wave frequency
         let speed = 0.05; // Wave speed

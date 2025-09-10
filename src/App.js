@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from "./components/NavBar/navbar";
 import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
+import SkillsShowcase from "./components/SkillsShowcase/skillsShowcase";
+import Experience from "./components/Experience/experience";
+import Projects from "./components/Projects/projects";
 import Works from "./components/Works/works";
 import Contact from "./components/contact/contact";
 import Footer from "./components/Footer/footer";
@@ -9,14 +12,6 @@ import ParticleTest from "./components/ParticleTest/ParticleTest";
 import "./components/ParticleTest/ParticleTest.css"; // Ensure correct path
 import "./App.css"
 
-import WaveAnimation from "./components/ParticleTest/WaveAnimation"
-import StarfieldAnimation from "./components/ParticleTest/StarfieldAnimation"
-import CanvasAnimation from "./components/ParticleTest/CanvasAnimation"
-import BubblesAnimation from "./components/ParticleTest/BubblesAnimation";
-import ConfettiAnimation from "./components/ParticleTest/ConfettiAnimation";
-import FirefliesAnimation from "./components/ParticleTest/FirefliesAnimation"
-import ShootingStarsAnimation from "./components/ParticleTest/ShootingStarsAnimation";
-import FireAnimation from "./components/ParticleTest/FireAnimation"
 function App() {
     return (
         <>
@@ -34,6 +29,9 @@ function App() {
                 <Navbar />
                 <Intro />
                 <Skills />
+                <SkillsShowcase />
+                <Experience />
+                <Projects />
                 <Works />
                 <Contact />
                 <Footer />

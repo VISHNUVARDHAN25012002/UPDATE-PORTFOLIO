@@ -20,6 +20,22 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 1rem;
+  min-height: 80vh;
+}
+
+.introTextContent {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem;
+}
+
+.introImageContent {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .introContent {
@@ -85,14 +101,46 @@
   object-position: top center;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .introTextContent {
+    max-width: 60%;
+    padding-right: 1rem;
+  }
+  
+  .introImageContent {
+    max-width: 40%;
+    padding-left: 1rem;
+  }
+  
+  .bg {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #intro {
     flex-direction: column;
     padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .introTextContent {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .introImageContent {
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 2rem;
   }
 
   .bg {
     margin-top: 2rem;
+    width: 280px;
+    height: 280px;
   }
 
   .btn {

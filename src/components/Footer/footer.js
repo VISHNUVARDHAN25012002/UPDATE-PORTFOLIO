@@ -5,4 +5,5 @@ const Footer=()=>{
         <footer className="footer">copyright &#169; 2024 vishnu vardhan.All right reserved.</footer>
     )
 }
+
 export default Footer;

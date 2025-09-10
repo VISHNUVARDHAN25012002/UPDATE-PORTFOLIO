@@ -11,98 +11,74 @@ const ParticleTest = () => {
     const particlesOptions = {
         background: {
             color: {
-                value: "#0d0d0d", // Dark background for better visibility
+                value: "transparent",
             },
         },
-        fpsLimit: 60,
+        fpsLimit: 30, // Reduced from 60 for better performance
         particles: {
             color: {
-                value: "#ffffff", // Particle color
+                value: "#ffffff", // Single color for better performance
             },
             number: {
-                value: 100,
+                value: 25, // Reduced from 50 for better performance
                 density: {
                     enable: true,
-                    value_area: 800,
+                    value_area: 1000,
                 },
             },
+            shape: {
+                type: "circle",
+            },
             size: {
-                value: 6, // Increased base size
-                random: true, // Randomize particle sizes for a dynamic look
+                value: 2, // Fixed size for better performance
+                random: false, // Disabled random for better performance
                 anim: {
-                    enable: true, // Enable size animation
-                    speed: 5,
-                    size_min: 0.1,
-                    sync: false,
+                    enable: false, // Disabled animation for better performance
                 },
             },
             move: {
                 enable: true,
-                speed: 3,
+                speed: 0.5, // Slower speed for better performance
                 direction: "none",
-                random: false,
+                random: false, // Disabled random movement for better performance
                 straight: false,
                 out_mode: "out",
-                bounce: false,
+                bounce: false, // Disabled bounce for better performance
                 attract: {
-                    enable: false,
+                    enable: false, // Disabled attraction for better performance
                 },
             },
             links: {
                 enable: true,
                 distance: 150,
                 color: "#ffffff",
-                opacity: 0.4,
-                width: 1,
+                opacity: 0.3,
+                width: 0.5,
             },
             opacity: {
-                value: 0.5,
-                random: true,
+                value: 0.4, // Fixed opacity for better performance
+                random: false, // Disabled random opacity for better performance
                 anim: {
-                    enable: true, // Enable opacity animation for a dynamic look
-                    speed: 2,
-                    opacity_min: 0.1,
-                    sync: false,
+                    enable: false, // Disabled opacity animation for better performance
                 },
+            },
+            shadow: {
+                enable: false, // Disabled shadow for better performance
             },
         },
         interactivity: {
-            // Use the whole window for detecting mouse interactions so the
-            // particles remain interactive even when other elements overlap
-            // the canvas
             detectsOn: "window",
             events: {
                 onHover: {
-                    enable: true,
-                    mode: ["repulse", "bubble"], // Enable bubble and repulse effects
+                    enable: false, // Disabled hover effects for better performance
                 },
                 onClick: {
-                    enable: true,
-                    mode: "push", // Add more particles on click
+                    enable: false, // Disabled click effects for better performance
                 },
                 resize: true,
             },
-            modes: {
-                bubble: {
-                    distance: 400,
-                    size: 40,
-                    duration: 2,
-                    opacity: 8,
-                    speed: 3,
-                },
-                repulse: {
-                    distance: 100, // Increased distance for the repel effect
-                    duration: 0.4,
-                },
-                push: {
-                    particles_nb: 4,
-                },
-                remove: {
-                    particles_nb: 2,
-                },
-            },
         },
-        detectRetina: true,
+        detectRetina: false, // Disabled retina detection for better performance
     };
 
     return (

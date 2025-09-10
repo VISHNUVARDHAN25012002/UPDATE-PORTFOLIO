@@ -4,75 +4,108 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
   background: transparent; /* No solid background */
   position: relative; /* Above particles */
   z-index: 1; /* Above particles */
+  min-height: 80vh;
 }
 
 .contactDesc {
-  padding: 1rem;
-  font-size: 1.1rem; /* Slightly larger text for readability */
-  font-weight: 300;
+  padding: 2rem;
+  font-size: 1.4rem; /* Much larger text for better visibility */
+  font-weight: 400;
   color: var(--accent-color); /* Change to match your portfolio's text color */
+  margin-bottom: 1rem;
 }
 
 .contactform {
-  margin: 1rem;
+  margin: 2rem auto; /* Center the form horizontally */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 500px; /* Limit max-width for desktop */
+  width: 90%; /* Use percentage width instead of viewport width */
+  max-width: 800px; /* Set a reasonable max-width */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px; /* Restored rounded corners */
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .name,
 .email,
 .msg {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Larger font size */
   width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.75rem 1rem;
+  margin: 1rem 0; /* More spacing between fields */
+  padding: 1.2rem 1.5rem; /* Much larger padding */
   color: #fff; /* White text for form fields */
-  border: none;
-  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* More visible border */
+  border-radius: 15px; /* More rounded corners */
   background: rgba(255, 255, 255, 0.1); /* Slightly transparent fields */
   box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.name:focus,
+.email:focus,
+.msg:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn {
   background: var(--accent-color);
   border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1.5rem; /* Adjust padding for a smaller button */
+  border-radius: 15px; /* More rounded corners */
+  padding: 1.2rem 3rem; /* Much larger padding */
   color: black;
-  font-size: 1rem; /* Slightly smaller font size */
+  font-size: 1.3rem; /* Larger font size */
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
   display: inline-block;
+  min-width: 200px;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
 }
 
 .submitBtn:hover {
   background: #e6b322; /* Slightly darker yellow on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 193, 7, 0.5);
 }
 
 .links {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+  gap: 1.5rem;
 }
 
 .link {
-  height: 3rem;
-  width: 3rem;
-  margin: 0 0.5rem;
-  transition: transform 0.3s ease;
+  height: 4rem; /* Larger social media icons */
+  width: 4rem;
+  margin: 0;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .link:hover {
-  transform: scale(1.1);
+  transform: scale(1.15) translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -91,10 +124,46 @@
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  #contactPage {
+    padding: 3rem 1rem;
+  }
+  
+  .contactform {
+    width: 95%;
+    max-width: none;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+  
+  .name,
+  .email,
+  .msg {
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+  }
+  
+  .submitBtn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+  
   .link {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactform {
+    padding: 1.5rem 0.5rem;
+    width: 98%;
+    margin: 2rem auto;
+  }
+  
+  .link {
+    height: 3rem;
+    width: 3rem;
   }
 
   .name,

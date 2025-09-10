@@ -30,8 +30,8 @@ const Skills = () => {
     return (
         <div className="container">
             <section id="skills">
-                <span className="skillTitle fade-in">What I do</span>
-                <span className="skillDesc fade-in">
+                <h2 className="skillTitle fade-in">What I Do - FullStack Java Development Services</h2>
+                <div className="skillDesc fade-in">
                     <ul>
                         <li>
                             I am passionate about creating <span className="highlight">dynamic</span> and <span
@@ -59,36 +59,38 @@ const Skills = () => {
                         Let’s build something <span className="highlight1">innovative together</span>!
                     </div>
 
-                </span>
+                </div>
 
                 <div className="skillBars">
                     <div className="skillBar fade-in">
-                        <img src={UIDesign} className="skillBarImg" alt="UI Design"/>
+                        <img src={UIDesign} className="skillBarImg" alt="Frontend Web Development with React and JavaScript"/>
                         <div className="skillBarText">
-                            <h2>Website Design</h2>
-                            <p>Designing websites using HTML, CSS, React, and JavaScript.</p>
+                            <h3>Frontend Web Development</h3>
+                            <p>Creating responsive and interactive websites using HTML5, CSS3, React, and JavaScript. Building modern user interfaces with excellent user experience.</p>
                         </div>
                     </div>
 
                     <div className="skillBar fade-in">
-                        <img src={SDesign} className="skillBarImg" alt="Backend Development"/>
+                        <img src={SDesign} className="skillBarImg" alt="Backend Development with Java Spring Boot"/>
                         <div className="skillBarText">
-                            <h2>Back-end Development</h2>
-                            <p>Java and Spring Boot for back-end development.</p>
+                            <h3>Backend Development with Java Spring Boot</h3>
+                            <p>Developing robust and scalable backend services using Java and Spring Boot framework. Creating RESTful APIs and microservices architecture.</p>
                         </div>
                     </div>
 
                     <div className="skillBar fade-in">
-                        <img src={SQL} className="skillBarImg" alt="MySQL"/>
+                        <img src={SQL} className="skillBarImg" alt="Database Management with MySQL"/>
                         <div className="skillBarText">
-                            <h2>MySQL</h2>
-                            <p>I perform with MySQL to handle database interactions and optimize queries.</p>
+                            <h3>Database Management with MySQL</h3>
+                            <p>Designing and optimizing MySQL databases, writing efficient queries, and managing data relationships. Ensuring data integrity and performance optimization.</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     );
+
 };
 
 export default Skills;
+

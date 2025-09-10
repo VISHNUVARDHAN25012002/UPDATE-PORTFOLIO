@@ -4,7 +4,6 @@ import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.png';
 import menu from '../../assets/menu.png';
 import { Link } from 'react-scroll';
-import Contact from "../contact/contact";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +14,10 @@ const Navbar = () => {
             <div className="desktopMenu">
                 <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
                 <Link to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
-                <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portfolio</Link>
+                <Link to="skillsShowcase" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Skills</Link>
+                <Link to="experience" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Experience</Link>
+                <Link to="projects" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Projects</Link>
+                <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Certificates</Link>
             </div>
             <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500}>
                 <button className="desktopmenuBtn">
@@ -27,7 +29,10 @@ const Navbar = () => {
             <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
                 <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Home</Link>
                 <Link to="skills" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>About</Link>
-                <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Portfolio</Link>
+                <Link to="skillsShowcase" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Skills</Link>
+                <Link to="experience" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Experience</Link>
+                <Link to="projects" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Projects</Link>
+                <Link to="works" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Certificates</Link>
                 <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Contact</Link>
             </div>
         </nav>
@@ -35,3 +40,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
