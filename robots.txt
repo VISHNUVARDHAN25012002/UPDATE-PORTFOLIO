@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://VISHNUVARDHAN25012002.github.io/UPDATE-PORTFOLIO/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

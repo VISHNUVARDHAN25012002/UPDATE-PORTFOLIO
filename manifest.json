@@ -1,0 +1,22 @@
+{
+  "short_name": "Vishnu Portfolio",
+  "name": "Vishnu Vardhan R - FullStack Java Developer Portfolio",
+  "description": "Portfolio website of Vishnu Vardhan R, a skilled FullStack Java Developer specializing in Java, Spring Boot, React, MySQL, and RESTful APIs.",
+  "icons": [
+    {
+      "src": "V.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "V.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0d0d0d",
+  "categories": ["portfolio", "developer", "java", "react", "web development"]
+}
