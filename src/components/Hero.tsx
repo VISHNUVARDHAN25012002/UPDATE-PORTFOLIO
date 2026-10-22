@@ -57,14 +57,19 @@ function RoleRotator() {
 function PhotoPortal() {
   const fine = useFinePointer();
   const reduced = useReducedMotion();
-  const active = fine && !reduced;
   const px = useMotionValue(0);
   const py = useMotionValue(0);
   const rotateY = useSpring(useTransform(px, [-1, 1], [-18, 18]), { stiffness: 150, damping: 18 });
   const rotateX = useSpring(useTransform(py, [-1, 1], [14, -14]), { stiffness: 150, damping: 18 });
   const shineX = useTransform(px, [-1, 1], ['0%', '100%']);
   const [avatarReady, setAvatarReady] = useState(false);
-  const onAvatarReady = useCallback(() => setAvatarReady(true), []);
+  const onAvatarReady = useCallback(() => {
+    setAvatarReady(true);
+    px.set(0);
+    py.set(0);
+  }, [px, py]);
+  // the 3D model rotates itself — tilting the card as well makes it wobble
+  const active = fine && !reduced && !avatarReady;
 
   const onMove = (e: PointerEvent<HTMLDivElement>) => {
     if (!active) return;
