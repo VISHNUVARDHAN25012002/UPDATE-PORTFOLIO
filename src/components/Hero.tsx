@@ -1,4 +1,4 @@
-import { useEffect, useState, type PointerEvent } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useState, type PointerEvent } from 'react';
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import photo from '../assets/My_pic.jpeg';
 import resume from '../assets/updated onepage.pdf';
@@ -8,6 +8,9 @@ import { Magnetic } from './Motion';
 import { scrollToId } from './Chrome';
 
 const ease = [0.22, 1, 0.36, 1] as const;
+
+// three.js avatar loads in its own chunk; the photo shows until the model is ready
+const Avatar3D = lazy(() => import('./Avatar3D'));
 
 function SplitWord({ text, delay }: { text: string; delay: number }) {
   return (
@@ -50,7 +53,7 @@ function RoleRotator() {
   );
 }
 
-/** Photo in a layered 3D frame: each layer sits at a different depth so it parallaxes on tilt. */
+/** 3D avatar (photo until it loads) in a layered 3D frame: each layer sits at a different depth so it parallaxes on tilt. */
 function PhotoPortal() {
   const fine = useFinePointer();
   const reduced = useReducedMotion();
@@ -60,6 +63,8 @@ function PhotoPortal() {
   const rotateY = useSpring(useTransform(px, [-1, 1], [-18, 18]), { stiffness: 150, damping: 18 });
   const rotateX = useSpring(useTransform(py, [-1, 1], [14, -14]), { stiffness: 150, damping: 18 });
   const shineX = useTransform(px, [-1, 1], ['0%', '100%']);
+  const [avatarReady, setAvatarReady] = useState(false);
+  const onAvatarReady = useCallback(() => setAvatarReady(true), []);
 
   const onMove = (e: PointerEvent<HTMLDivElement>) => {
     if (!active) return;
@@ -82,12 +87,17 @@ function PhotoPortal() {
       transition={{ duration: 1.2, delay: 0.5, ease }}
       data-cursor
     >
-      <motion.div className="portal" style={{ rotateX, rotateY }}>
+      <motion.div className={`portal${avatarReady ? ' is-3d' : ''}`} style={{ rotateX, rotateY }}>
         <div className="portal-ring" />
         <div className="portal-frame">
           <img src={photo} alt="Vishnu Vardhan R — FullStack Java Developer, Vishnu Portfolio" fetchPriority="high" />
           <motion.div className="portal-shine" style={{ left: shineX }} />
           <div className="portal-fade" />
+        </div>
+        <div className="portal-avatar">
+          <Suspense fallback={null}>
+            <Avatar3D reducedMotion={reduced} onReady={onAvatarReady} />
+          </Suspense>
         </div>
 
         <div className="portal-chip chip-status">

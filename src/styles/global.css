@@ -710,6 +710,39 @@ main,
   background: linear-gradient(to top, rgba(5, 7, 13, 0.85), transparent);
 }
 
+/* once the 3D avatar is ready it replaces the photo card and stands free */
+.portal-frame {
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.portal.is-3d .portal-frame {
+  opacity: 0;
+  transform: translateZ(0) scale(0.96);
+  pointer-events: none;
+}
+
+.portal-avatar {
+  position: absolute;
+  inset: -4% -10% 0;
+  transform: translateZ(30px);
+  opacity: 0;
+  transition: opacity 0.9s ease 0.15s;
+  /* the bust ends at the waist — fade it into the page */
+  -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 98%);
+  mask-image: linear-gradient(to bottom, #000 78%, transparent 98%);
+}
+
+.portal.is-3d .portal-avatar {
+  opacity: 1;
+}
+
+.portal.is-3d .portal-ring {
+  border-radius: 50%;
+  inset: 8% 4% 14%;
+  opacity: 0.4;
+  filter: blur(46px);
+}
+
 .portal-chip {
   position: absolute;
   padding: 10px 16px;
