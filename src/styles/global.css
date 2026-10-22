@@ -723,13 +723,22 @@ main,
 
 .portal-avatar {
   position: absolute;
-  inset: -4% -10% 0;
+  inset: -4% -10% -2%;
   transform: translateZ(30px);
   opacity: 0;
   transition: opacity 0.9s ease 0.15s;
-  /* the bust ends at the waist — fade it into the page */
-  -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 98%);
-  mask-image: linear-gradient(to bottom, #000 78%, transparent 98%);
+}
+
+.avatar-stage {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+  /* horizontal drags spin the figure; vertical swipes still scroll the page */
+  touch-action: pan-y;
+}
+
+.avatar-stage:active {
+  cursor: grabbing;
 }
 
 .portal.is-3d .portal-avatar {
@@ -738,9 +747,9 @@ main,
 
 .portal.is-3d .portal-ring {
   border-radius: 50%;
-  inset: 8% 4% 14%;
-  opacity: 0.4;
-  filter: blur(46px);
+  inset: 6% 10% 30%;
+  opacity: 0.22;
+  filter: blur(50px);
 }
 
 .portal-chip {
