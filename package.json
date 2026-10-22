@@ -1,60 +1,37 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "engines": {
-    "node": "20.x"
+    "node": ">=20"
   },
-  "dependencies": {
-    "@emailjs/browser": "^3.12.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.7",
-    "postcss": "^8.4.41",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "^5.0.1",
-    "react-scroll": "^1.9.0",
-    "react-tsparticles": "^2.9.0",
-    "resolve-url-loader": "^5.0.0",
-    "tsparticles": "^2.9.0",
-    "web-vitals": "^2.1.4"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0"
-  },
+  "homepage": "https://vishnuportfolio.in",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "@react-three/drei": "9.122.0",
+    "@react-three/fiber": "8.18.0",
+    "framer-motion": "11.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "0.170.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "resolutions": {
-    "react-dev-utils": "^11.0.4"
-  },
-  "homepage": "https://vishnuportfolio.in"
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "0.170.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.6.3",
+    "vite": "6.4.4"
+  }
 }
